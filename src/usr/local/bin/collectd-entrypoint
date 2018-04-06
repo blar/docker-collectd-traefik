@@ -1,8 +1,0 @@
-#!/bin/sh
-
-sed-recursive "s#\$COLLECTD_LIBRATO_USERNAME#$COLLECTD_LIBRATO_USERNAME#g" /etc/collectd
-sed-recursive "s#\$COLLECTD_LIBRATO_PASSWORD#$COLLECTD_LIBRATO_PASSWORD#g" /etc/collectd
-sed-recursive "s#\$COLLECTD_TRAEFIK_URL#$COLLECTD_TRAEFIK_URL#g" /etc/collectd
-sed-recursive "s#\$COLLECTD_TRAEFIK_HOST#$COLLECTD_TRAEFIK_HOST#g" /etc/collectd
-
-exec "$@"

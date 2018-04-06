@@ -1,7 +1,4 @@
-FROM alpine:3.7
+FROM foobox/collectd-librato:1.0
+LABEL maintainer="gmblar+github@gmail.com"
 
 COPY src /
-RUN collectd-setup
-
-ENTRYPOINT ["collectd-entrypoint"]
-CMD ["collectd", "-f"]
